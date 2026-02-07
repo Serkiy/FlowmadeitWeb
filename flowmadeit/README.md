@@ -67,7 +67,41 @@ The production-ready files will be in the `dist` folder.
 npm run preview
 ```
 
-## 🌐 Deploy to Netlify
+## 🌐 Deploy to Vercel (Recommended)
+
+Your project is pre-configured for Vercel with `vercel.json`. **No manual setup needed!**
+
+### Quick Deploy (GitHub Integration):
+
+1. **Push to GitHub** (if not already):
+   ```bash
+   git add .
+   git commit -m "Ready for deployment"
+   git push origin master
+   ```
+
+2. **Deploy on Vercel:**
+   - Go to [vercel.com](https://vercel.com/)
+   - Click "Add New" → "Project"
+   - Import your repository: `Serkiy/FlowmadeitWeb`
+   - Click "Deploy"
+   - ⚡ Live in ~1 minute!
+
+### Alternative: Vercel CLI
+
+```bash
+npm install -g vercel
+vercel login
+vercel --prod
+```
+
+📖 **See [VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md) for detailed instructions**
+
+---
+
+## 🌐 Deploy to Netlify (Alternative)
+
+Your project also supports Netlify deployment with `netlify.toml`.
 
 ### Option 1: Deploy with Netlify CLI
 
