@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Flowmadeit/flowmadeit.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+</Solution>

@@ -1,0 +1,183 @@
+import { useState, useEffect, useRef } from 'react'
+import './Statistics.css'
+
+const Statistics = () => {
+  const [isVisible, setIsVisible] = useState(false)
+  const [counts, setCounts] = useState({
+    projects: 0,
+    clients: 0,
+    views: 0,
+    awards: 0
+  })
+  const sectionRef = useRef(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+          animateCounters()
+        }
+      },
+      { threshold: 0.3 }
+    )
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current)
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current)
+      }
+    }
+  }, [])
+
+  const animateCounters = () => {
+    const targets = {
+      projects: 500,
+      clients: 200,
+      views: 1000000,
+      awards: 25
+    }
+
+    const duration = 2000
+    const steps = 60
+    const stepDuration = duration / steps
+
+    let step = 0
+    const timer = setInterval(() => {
+      step++
+      const progress = step / steps
+
+      setCounts({
+        projects: Math.floor(targets.projects * progress),
+        clients: Math.floor(targets.clients * progress),
+        views: Math.floor(targets.views * progress),
+        awards: Math.floor(targets.awards * progress)
+      })
+
+      if (step >= steps) {
+        clearInterval(timer)
+        setCounts(targets)
+      }
+    }, stepDuration)
+  }
+
+  const formatNumber = (num) => {
+    if (num >= 1000000) {
+      return (num / 1000000).toFixed(1) + 'M'
+    }
+    if (num >= 1000) {
+      return (num / 1000).toFixed(0) + 'K'
+    }
+    return num.toString()
+  }
+
+  const stats = [
+    {
+      label: 'Projects Completed',
+      value: counts.projects,
+      suffix: '+',
+      icon: '🎬'
+    },
+    {
+      label: 'Happy Clients',
+      value: counts.clients,
+      suffix: '+',
+      icon: '👥'
+    },
+    {
+      label: 'Total Views',
+      value: formatNumber(counts.views),
+      suffix: '+',
+      icon: '👁️'
+    },
+    {
+      label: 'Awards Won',
+      value: counts.awards,
+      suffix: '+',
+      icon: '🏆'
+    }
+  ]
+
+  const chartData = [
+    { month: 'Jan', value: 65 },
+    { month: 'Feb', value: 78 },
+    { month: 'Mar', value: 82 },
+    { month: 'Apr', value: 90 },
+    { month: 'May', value: 95 },
+    { month: 'Jun', value: 88 }
+  ]
+
+  return (
+    <section id="stats" className="statistics" ref={sectionRef}>
+      <div className="statistics-container">
+        <div className={`section-header ${isVisible ? 'visible' : ''}`}>
+          <h2 className="section-title">Our Impact in Numbers</h2>
+          <p className="section-subtitle">
+            Real results that drive your business forward
+          </p>
+        </div>
+
+        <div className={`stats-grid ${isVisible ? 'visible' : ''}`}>
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="stat-card"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="stat-icon">{stat.icon}</div>
+              <div className="stat-value">
+                {stat.value}{stat.suffix}
+              </div>
+              <div className="stat-label">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className={`chart-section ${isVisible ? 'visible' : ''}`}>
+          <h3 className="chart-title">Client Satisfaction Rate</h3>
+          <div className="chart-container">
+            <div className="chart">
+              {chartData.map((item, index) => (
+                <div key={index} className="chart-bar-wrapper">
+                  <div
+                    className="chart-bar"
+                    style={{
+                      height: `${item.value}%`,
+                      animationDelay: `${index * 0.1}s`
+                    }}
+                  >
+                    <span className="chart-value">{item.value}%</span>
+                  </div>
+                  <span className="chart-label">{item.month}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className={`features-grid ${isVisible ? 'visible' : ''}`}>
+          <div className="feature-box">
+            <div className="feature-icon">⚡</div>
+            <h4>Fast Delivery</h4>
+            <p>Quick turnaround times without compromising quality</p>
+          </div>
+          <div className="feature-box">
+            <div className="feature-icon">💎</div>
+            <h4>Premium Quality</h4>
+            <p>Industry-leading standards in every project</p>
+          </div>
+          <div className="feature-box">
+            <div className="feature-icon">🎯</div>
+            <h4>Results Driven</h4>
+            <p>Focused on achieving your business goals</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Statistics
