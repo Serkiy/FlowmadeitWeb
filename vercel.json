@@ -1,0 +1,1 @@
+{"buildCommand":"cd flowmadeit && npm run build","outputDirectory":"flowmadeit/dist","installCommand":"cd flowmadeit && npm install","rewrites":[{"source":"/(.*)", "destination":"/index.html"}]}
