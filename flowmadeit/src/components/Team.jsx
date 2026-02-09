@@ -34,7 +34,7 @@ const Team = () => {
       name: 'Florin Brasoveanu',
       role: 'Videograf',
       image: florinImg,
-      bio: '5+ years in video production and brand storytelling',
+      bio: '5+ ani in productie video si foto',
       social: {
         linkedin: '#',
         twitter: '#',
