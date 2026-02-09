@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import './Team.css'
+import seies from './assets/seies.jpg'
+import feies from './assets/feies.jpg'
+import beies from './assets/beies.jpg'
 
 const Team = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -28,10 +31,10 @@ const Team = () => {
 
   const team = [
     {
-      name: 'Sarah Johnson',
-      role: 'Creative Director',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
-      bio: '10+ years in video production and brand storytelling',
+      name: 'Florin Brasoveanu',
+      role: 'Videograf',
+      image: feies,
+      bio: '5+ years in video production and brand storytelling',
       social: {
         linkedin: '#',
         twitter: '#',
@@ -39,10 +42,10 @@ const Team = () => {
       }
     },
     {
-      name: 'Michael Chen',
-      role: 'Lead Video Editor',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
-      bio: 'Award-winning editor specializing in commercial content',
+      name: 'Bogdan Gheboianu',
+      role: 'Figuratie',
+      image: beies,
+      bio: 'Pot fi imaginea brandului tau. Sunt un om placut si haios, clientii tai ma vor iubi!',
       social: {
         linkedin: '#',
         twitter: '#',
@@ -50,10 +53,10 @@ const Team = () => {
       }
     },
     {
-      name: 'Emily Rodriguez',
-      role: 'Digital Marketing Strategist',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop',
-      bio: 'Expert in social media growth and digital campaigns',
+      name: 'Sergiu Novac',
+      role: 'IT - website',
+      image: seies,
+      bio: 'Orice tine de domeniul IT ajunge la mine',
       social: {
         linkedin: '#',
         twitter: '#',
