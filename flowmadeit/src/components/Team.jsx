@@ -1,8 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
 import './Team.css'
-import seies from './assets/seies.jpg'
-import feies from './assets/feies.jpg'
-import beies from './assets/beies.jpg'
 
 const Team = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -33,7 +30,7 @@ const Team = () => {
     {
       name: 'Florin Brasoveanu',
       role: 'Videograf',
-      image: feies,
+      image: 'https://drive.google.com/uc?export=view&id=1UTR_UFgMRsdJAeZoutCxcgLI4ihxQ5vx',
       bio: '5+ years in video production and brand storytelling',
       social: {
         linkedin: '#',
@@ -44,7 +41,7 @@ const Team = () => {
     {
       name: 'Bogdan Gheboianu',
       role: 'Figuratie',
-      image: beies,
+      image: 'https://drive.google.com/uc?export=view&id=1hjAjsvjn3NBmG-XHvi3O72GGJxP0Mj3b',
       bio: 'Pot fi imaginea brandului tau. Sunt un om placut si haios, clientii tai ma vor iubi!',
       social: {
         linkedin: '#',
@@ -55,7 +52,7 @@ const Team = () => {
     {
       name: 'Sergiu Novac',
       role: 'IT - website',
-      image: seies,
+      image: 'https://drive.google.com/uc?export=view&id=1BwoSqjM0k6CPht2gtpvdV089FY_1rPRL',
       bio: 'Orice tine de domeniul IT ajunge la mine',
       social: {
         linkedin: '#',
@@ -63,17 +60,7 @@ const Team = () => {
         instagram: '#'
       }
     },
-    {
-      name: 'David Kim',
-      role: 'Motion Graphics Designer',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
-      bio: 'Creating stunning animations and visual effects',
-      social: {
-        linkedin: '#',
-        twitter: '#',
-        instagram: '#'
-      }
-    }
+
   ]
 
   return (
