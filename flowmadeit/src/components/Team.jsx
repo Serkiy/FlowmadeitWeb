@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import './Team.css'
+import florinImg from '../assets/florin.jpg'
+import bogdanImg from '../assets/bogdan.jpg'
+import sergiuImg from '../assets/sergiu.jpeg'
 
 const Team = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -30,7 +33,7 @@ const Team = () => {
     {
       name: 'Florin Brasoveanu',
       role: 'Videograf',
-      image: 'https://drive.google.com/uc?export=view&id=1UTR_UFgMRsdJAeZoutCxcgLI4ihxQ5vx',
+      image: florinImg,
       bio: '5+ years in video production and brand storytelling',
       social: {
         linkedin: '#',
@@ -41,7 +44,7 @@ const Team = () => {
     {
       name: 'Bogdan Gheboianu',
       role: 'Figuratie',
-      image: 'https://drive.google.com/uc?export=view&id=1hjAjsvjn3NBmG-XHvi3O72GGJxP0Mj3b',
+      image: bogdanImg,
       bio: 'Pot fi imaginea brandului tau. Sunt un om placut si haios, clientii tai ma vor iubi!',
       social: {
         linkedin: '#',
@@ -52,7 +55,7 @@ const Team = () => {
     {
       name: 'Sergiu Novac',
       role: 'IT - website',
-      image: 'https://drive.google.com/uc?export=view&id=1BwoSqjM0k6CPht2gtpvdV089FY_1rPRL',
+      image: sergiuImg,
       bio: 'Orice tine de domeniul IT ajunge la mine',
       social: {
         linkedin: '#',
