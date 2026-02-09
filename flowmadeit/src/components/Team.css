@@ -48,6 +48,10 @@
   transition: transform 0.5s ease;
 }
 
+.team-image.crop-top {
+  object-position: center top;
+}
+
 .team-card:hover .team-image {
   transform: scale(1.1);
 }
