@@ -1,0 +1,128 @@
+.showcase-video {
+  padding: 3rem 2rem;
+  background: linear-gradient(180deg, var(--dark-bg) 0%, #1e293b 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.video-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.video-wrapper {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(99, 102, 241, 0.3);
+  transition: all 0.5s ease;
+}
+
+.video-wrapper:hover {
+  box-shadow: 
+    0 30px 80px rgba(0, 0, 0, 0.6),
+    0 0 0 2px rgba(99, 102, 241, 0.6);
+  transform: translateY(-5px);
+}
+
+.presentation-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  min-height: 400px;
+  max-height: 700px;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(99, 102, 241, 0.05) 0%,
+    transparent 20%,
+    transparent 80%,
+    rgba(99, 102, 241, 0.05) 100%
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.video-wrapper:hover .video-overlay {
+  opacity: 1;
+}
+
+/* Efect de glow pe margini */
+.video-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: var(--gradient);
+  border-radius: 24px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.video-wrapper:hover::before {
+  opacity: 0.3;
+  filter: blur(10px);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .showcase-video {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .video-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase-video {
+    padding: 2rem 1rem;
+  }
+  
+  .video-wrapper {
+    border-radius: 16px;
+  }
+  
+  .presentation-video {
+    min-height: 300px;
+    max-height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase-video {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .video-wrapper {
+    border-radius: 12px;
+  }
+  
+  .presentation-video {
+    min-height: 250px;
+    max-height: 400px;
+  }
+}

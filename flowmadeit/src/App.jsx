@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Hero from './components/Hero'
+import ShowcaseVideo from './components/ShowcaseVideo'
 import Packages from './components/Packages'
 import Portfolio from './components/Portfolio'
 import Team from './components/Team'
@@ -34,6 +35,7 @@ function App() {
       </nav>
 
       <Hero />
+      <ShowcaseVideo />
       <Packages />
       <Portfolio />
       <Team />
