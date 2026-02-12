@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
 import './ShowcaseVideo.css'
-import videoprezVideo from '../assets/Videoprez.mp4'
 
 const ShowcaseVideo = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -48,7 +47,7 @@ const ShowcaseVideo = () => {
             muted
             playsInline
           >
-            <source src={videoprezVideo} type="video/mp4" />
+            <source src="/Videoprez.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="video-overlay"></div>
