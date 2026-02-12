@@ -35,21 +35,24 @@ const Portfolio = () => {
       title: 'Hai sa lucram!',
       category: 'video',
       description: 'Ce mai astepti',
-      image: haisalucramVideo
+      media: haisalucramVideo,
+      type: 'video'
     },
     {
       title: 'Vanzari',
       category: 'video',
       description: 'Cifra de vanzare',
-      image: selllVideo
+      media: selllVideo,
+      type: 'video'
     },
     {
       title: 'Statistica',
       category: 'video',
-        description: 'Grafice si statistici',
-        image: ytVideo
+      description: 'Grafice si statistici',
+      media: ytVideo,
+      type: 'video'
     },
-    
+
   ]
 
   const filters = ['all', 'video', 'social']
@@ -88,7 +91,18 @@ const Portfolio = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="portfolio-image">
-                <img src={project.image} alt={project.title} />
+                {project.type === 'video' ? (
+                  <video 
+                    src={project.media} 
+                    alt={project.title}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
+                ) : (
+                  <img src={project.media} alt={project.title} />
+                )}
                 <div className="portfolio-overlay">
                   <div className="portfolio-content">
                     <h3>{project.title}</h3>
