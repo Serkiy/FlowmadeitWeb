@@ -6,7 +6,7 @@
 }
 
 .video-container {
-  max-width: 1400px;
+  max-width: 650px;
   margin: 0 auto;
   opacity: 0;
   transform: translateY(40px);
@@ -26,6 +26,7 @@
     0 20px 60px rgba(0, 0, 0, 0.5),
     0 0 0 1px rgba(99, 102, 241, 0.3);
   transition: all 0.5s ease;
+  aspect-ratio: 9 / 16;
 }
 
 .video-wrapper:hover {
@@ -37,10 +38,8 @@
 
 .presentation-video {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  min-height: 400px;
-  max-height: 700px;
   object-fit: cover;
 }
 
@@ -91,9 +90,9 @@
   .showcase-video {
     padding: 2.5rem 1.5rem;
   }
-  
+
   .video-container {
-    max-width: 100%;
+    max-width: 550px;
   }
 }
 
@@ -101,14 +100,13 @@
   .showcase-video {
     padding: 2rem 1rem;
   }
-  
+
+  .video-container {
+    max-width: 450px;
+  }
+
   .video-wrapper {
     border-radius: 16px;
-  }
-  
-  .presentation-video {
-    min-height: 300px;
-    max-height: 500px;
   }
 }
 
@@ -116,13 +114,13 @@
   .showcase-video {
     padding: 1.5rem 0.75rem;
   }
-  
+
+  .video-container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
   .video-wrapper {
     border-radius: 12px;
-  }
-  
-  .presentation-video {
-    min-height: 250px;
-    max-height: 400px;
   }
 }
