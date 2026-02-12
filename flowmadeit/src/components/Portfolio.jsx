@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import './Portfolio.css'
+import haisalucramVideo from '../assets/haisalucram.mp4'
+import selllVideo from '../assets/selll.mp4'
+import ytVideo from '../assets/yt.mp4'
 
 const Portfolio = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -29,41 +32,24 @@ const Portfolio = () => {
 
   const projects = [
     {
-      title: 'Brand Launch Video',
+      title: 'Hai sa lucram!',
       category: 'video',
-      description: 'Dynamic product launch video for tech startup',
-      image: 'https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=600&h=400&fit=crop'
+      description: 'Ce mai astepti',
+      image: haisalucramVideo
     },
     {
-      title: 'Social Media Campaign',
-      category: 'social',
-      description: 'Complete social media branding for e-commerce',
-      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop'
-    },
-    {
-      title: 'Corporate Video',
+      title: 'Vanzari',
       category: 'video',
-      description: 'Professional corporate presentation video',
-      image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop'
+      description: 'Cifra de vanzare',
+      image: selllVideo
     },
     {
-      title: 'Digital Marketing',
-      category: 'marketing',
-      description: 'Comprehensive digital marketing strategy',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop'
-    },
-    {
-      title: 'Instagram Reels',
-      category: 'social',
-      description: 'Viral Instagram reels for fashion brand',
-      image: 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=600&h=400&fit=crop'
-    },
-    {
-      title: 'Explainer Video',
+      title: 'Statistica',
       category: 'video',
-      description: 'Animated explainer video for SaaS company',
-      image: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?w=600&h=400&fit=crop'
-    }
+        description: 'Grafice si statistici',
+        image: ytVideo
+    },
+    
   ]
 
   const filters = ['all', 'video', 'social']
