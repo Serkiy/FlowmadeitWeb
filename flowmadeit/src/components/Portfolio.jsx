@@ -66,7 +66,7 @@ const Portfolio = () => {
     }
   ]
 
-  const filters = ['all', 'video', 'social', 'marketing']
+  const filters = ['all', 'video', 'social']
 
   const filteredProjects = activeFilter === 'all' 
     ? projects 
