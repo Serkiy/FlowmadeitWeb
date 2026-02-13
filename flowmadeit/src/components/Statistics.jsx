@@ -35,10 +35,10 @@ const Statistics = () => {
 
   const animateCounters = () => {
     const targets = {
-      projects: 500,
+      projects: 100,
       clients: 200,
-      views: 1000000,
-      awards: 25
+      views: 76000,
+      awards: 2
     }
 
     const duration = 2000
@@ -101,14 +101,7 @@ const Statistics = () => {
     }
   ]
 
-  const chartData = [
-    { month: 'Jan', value: 65 },
-    { month: 'Feb', value: 78 },
-    { month: 'Mar', value: 82 },
-    { month: 'Apr', value: 90 },
-    { month: 'May', value: 95 },
-    { month: 'Jun', value: 88 }
-  ]
+  
 
   return (
     <section id="stats" className="statistics" ref={sectionRef}>
@@ -136,27 +129,7 @@ const Statistics = () => {
           ))}
         </div>
 
-        <div className={`chart-section ${isVisible ? 'visible' : ''}`}>
-          <h3 className="chart-title">Grad de Satisfacție Clienți</h3>
-          <div className="chart-container">
-            <div className="chart">
-              {chartData.map((item, index) => (
-                <div key={index} className="chart-bar-wrapper">
-                  <div
-                    className="chart-bar"
-                    style={{
-                      height: `${item.value}%`,
-                      animationDelay: `${index * 0.1}s`
-                    }}
-                  >
-                    <span className="chart-value">{item.value}%</span>
-                  </div>
-                  <span className="chart-label">{item.month}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        
 
         <div className={`features-grid ${isVisible ? 'visible' : ''}`}>
           <div className="feature-box">

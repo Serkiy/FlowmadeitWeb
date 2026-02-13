@@ -1,6 +1,6 @@
 .statistics {
   padding: 6rem 2rem;
-  background: var(--light-bg);
+  background: linear-gradient(180deg, var(--dark-bg) 0%, #1e293b 100%);
   position: relative;
 }
 

@@ -6,7 +6,7 @@ import ytVideo from '../assets/yt.mp4'
 
 const Portfolio = () => {
   const [isVisible, setIsVisible] = useState(false)
-  const [activeFilter, setActiveFilter] = useState('all')
+  const [activeFilter, setActiveFilter] = useState('toate')
   const sectionRef = useRef(null)
 
   useEffect(() => {
