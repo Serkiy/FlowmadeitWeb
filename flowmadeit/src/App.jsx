@@ -7,7 +7,6 @@ import Portfolio from './components/Portfolio'
 import Team from './components/Team'
 import Statistics from './components/Statistics'
 import Footer from './components/Footer'
-import WelcomeOverlay from './components/WelcomeOverlay'
 
 function App() {
   const [scrolled, setScrolled] = useState(false)
@@ -22,7 +21,6 @@ function App() {
 
   return (
     <div className="App">
-      <WelcomeOverlay />
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-container">
           <div className="logo">FlowMadeIt</div>
