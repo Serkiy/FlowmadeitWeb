@@ -25,6 +25,3 @@ dist-ssr
 
 # Vercel
 .vercel
-
-# Large video files
-public/Videoprez.mp4

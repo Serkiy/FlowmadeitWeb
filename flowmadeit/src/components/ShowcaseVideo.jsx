@@ -12,14 +12,15 @@ const ShowcaseVideo = () => {
       ([entry]) => {
         setIsVisible(entry.isIntersecting)
 
-        if (videoRef.current) {
-          if (entry.isIntersecting) {
+        if (videoRef.current && entry.isIntersecting) {
+          videoRef.current.play().then(() => {
             videoRef.current.muted = false
             videoRef.current.volume = 0.7
-            videoRef.current.play()
-          } else {
-            videoRef.current.muted = true
-          }
+          }).catch(() => {
+            // Keep it muted if browser blocks unmute
+          })
+        } else if (videoRef.current) {
+          videoRef.current.muted = true
         }
       },
       { threshold: 0.3 }
