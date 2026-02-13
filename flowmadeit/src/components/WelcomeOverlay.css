@@ -28,7 +28,7 @@
 
 .close-btn {
   position: absolute;
-  top: -20px;
+  top: -80px;
   right: -20px;
   background: rgba(255, 255, 255, 0.9);
   border: none;
@@ -60,9 +60,9 @@
 }
 
 .person-image {
-  width: 400px;
+  width: 560px;
   height: auto;
-  max-height: 500px;
+  max-height: 700px;
   object-fit: contain;
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
   animation: wave 3s ease-in-out infinite;
@@ -71,7 +71,7 @@
 .thought-bubble {
   position: absolute;
   top: -20px;
-  right: -80px;
+  right: -320px;
   background: white;
   border-radius: 30px;
   padding: 1.5rem 2rem;
