@@ -40,7 +40,7 @@ const Hero = () => {
 
         <div className="hero-stats">
           <div className="stat-item">
-            <h3>500+</h3>
+            <h3>100+</h3>
             <p>Proiecte Finalizate</p>
           </div>
           <div className="stat-item">
@@ -48,7 +48,7 @@ const Hero = () => {
             <p>Clienți Mulțumiți</p>
           </div>
           <div className="stat-item">
-            <h3>98%</h3>
+            <h3>100%</h3>
             <p>Grad de Satisfacție</p>
           </div>
         </div>
