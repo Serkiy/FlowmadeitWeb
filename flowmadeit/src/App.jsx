@@ -25,11 +25,11 @@ function App() {
         <div className="nav-container">
           <div className="logo">FlowMadeIt</div>
           <ul className="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#packages">Packages</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#stats">Stats</a></li>
+            <li><a href="#home">Acasă</a></li>
+            <li><a href="#packages">Pachete</a></li>
+            <li><a href="#portfolio">Portofoliu</a></li>
+            <li><a href="#team">Echipa</a></li>
+            <li><a href="#stats">Statistici</a></li>
           </ul>
         </div>
       </nav>

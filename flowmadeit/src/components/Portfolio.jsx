@@ -55,9 +55,9 @@ const Portfolio = () => {
 
   ]
 
-  const filters = ['all', 'video', 'social']
+  const filters = ['toate', 'video', 'social']
 
-  const filteredProjects = activeFilter === 'all' 
+  const filteredProjects = activeFilter === 'toate'
     ? projects 
     : projects.filter(project => project.category === activeFilter)
 
@@ -65,9 +65,9 @@ const Portfolio = () => {
     <section id="portfolio" className="portfolio" ref={sectionRef}>
       <div className="portfolio-container">
         <div className={`section-header ${isVisible ? 'visible' : ''}`}>
-          <h2 className="section-title">Our Portfolio</h2>
+          <h2 className="section-title">Portofoliul Nostru</h2>
           <p className="section-subtitle">
-            Explore our latest creative projects and success stories
+            Descoperă cele mai recente proiecte și povești de succes
           </p>
         </div>
 
@@ -78,7 +78,7 @@ const Portfolio = () => {
               className={`filter-btn ${activeFilter === filter ? 'active' : ''}`}
               onClick={() => setActiveFilter(filter)}
             >
-              {filter.charAt(0).toUpperCase() + filter.slice(1)}
+              {filter === 'toate' ? 'Toate' : filter === 'video' ? 'Video' : 'Social Media'}
             </button>
           ))}
         </div>
@@ -107,7 +107,7 @@ const Portfolio = () => {
                   <div className="portfolio-content">
                     <h3>{project.title}</h3>
                     <p>{project.description}</p>
-                    <button className="view-btn">View Project →</button>
+                    <button className="view-btn">Vezi Proiectul →</button>
                   </div>
                 </div>
               </div>

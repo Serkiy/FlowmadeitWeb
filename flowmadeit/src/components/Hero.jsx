@@ -21,35 +21,35 @@ const Hero = () => {
       
       <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
         <h1 className="hero-title">
-          Transform Your Brand with
-          <span className="gradient-text"> Video & Digital Marketing</span>
+          Transformă-ți Brandul cu
+          <span className="gradient-text"> Video & Marketing Digital</span>
         </h1>
         <p className="hero-subtitle">
-          We create stunning visual content that converts viewers into customers.
-          Elevate your brand with our creative expertise.
+          Creăm conținut vizual care transformă vizitatorii în clienți.
+          Ridică-ți brandul cu ajutorul expertizei si creativitatii.
         </p>
         <div className="hero-buttons">
           <a href="#packages" className="btn btn-primary">
-            View Packages
+            Vezi Pachete
             <span className="btn-icon">→</span>
           </a>
           <a href="#portfolio" className="btn btn-secondary">
-            Our Work
+            Portofoliu
           </a>
         </div>
-        
+
         <div className="hero-stats">
           <div className="stat-item">
             <h3>500+</h3>
-            <p>Projects Completed</p>
+            <p>Proiecte Finalizate</p>
           </div>
           <div className="stat-item">
             <h3>200+</h3>
-            <p>Happy Clients</p>
+            <p>Clienți Mulțumiți</p>
           </div>
           <div className="stat-item">
             <h3>98%</h3>
-            <p>Satisfaction Rate</p>
+            <p>Grad de Satisfacție</p>
           </div>
         </div>
       </div>

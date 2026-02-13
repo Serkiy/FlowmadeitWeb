@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="footer-section">
             <h3 className="footer-logo">FlowMadeIt</h3>
             <p className="footer-description">
-              Transforming brands through creative video and digital marketing solutions.
+              Transformăm branduri prin soluții creative de video și marketing digital.
             </p>
             <div className="social-links">
               <a href="#" className="social-link">
@@ -35,22 +35,22 @@ const Footer = () => {
           </div>
 
           <div className="footer-section">
-            <h4 className="footer-title">Services</h4>
+            <h4 className="footer-title">Servicii</h4>
             <ul className="footer-links">
-              <li><a href="#">Video Production</a></li>
-              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">Producție Video</a></li>
+              <li><a href="#">Marketing Digital</a></li>
               <li><a href="#">Social Media</a></li>
               <li><a href="#">Branding</a></li>
-              <li><a href="#">Animation</a></li>
+              <li><a href="#">Animație</a></li>
             </ul>
           </div>
 
           <div className="footer-section">
-            <h4 className="footer-title">Company</h4>
+            <h4 className="footer-title">Companie</h4>
             <ul className="footer-links">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Careers</a></li>
+              <li><a href="#">Despre Noi</a></li>
+              <li><a href="#">Echipa Noastră</a></li>
+              <li><a href="#">Cariere</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
@@ -82,11 +82,11 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 FlowMadeIt. All rights reserved.</p>
+          <p>&copy; 2024 FlowMadeIt. Toate drepturile rezervate.</p>
           <div className="footer-bottom-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Cookie Policy</a>
+            <a href="#">Politica de Confidențialitate</a>
+            <a href="#">Termeni și Condiții</a>
+            <a href="#">Politica Cookie</a>
           </div>
         </div>
       </div>

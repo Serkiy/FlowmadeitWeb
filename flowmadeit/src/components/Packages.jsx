@@ -28,48 +28,48 @@ const Packages = () => {
 
   const packages = [
     {
-      name: 'Professional',
-      price: '$999',
+      name: 'Profesional',
+      price: '3999 LEI',
       popular: false,
       features: [
-        '3 Professional Videos',
-        'Social Media Graphics',
-        'Basic Video Editing',
-        '2 Revisions',
-        '1080p Resolution',
-        'Delivery in 10 Days',
-        'Email Support'
+        '3 Videoclipuri Profesionale',
+        'Grafică Social Media',
+        'Editare Video de Bază',
+        '2 Revizuiri',
+        'Rezoluție 1080p',
+        'Livrare în 10 Zile',
+        'Suport Email'
       ],
       color: '#6366f1'
     },
     {
       name: 'Starter',
-      price: '$499',
+      price: '1999 LEI',
       popular: true,
       features: [
-        '1 Professional Video',
-        '5 Social Media Posts',
-        'Basic Editing',
-        '1 Revision',
-        '1080p Resolution',
-        'Delivery in 7 Days',
-        'Email Support'
+        '1 Videoclip Profesional',
+        '5 Postări Social Media',
+        'Editare de Bază',
+        '1 Revizuire',
+        'Rezoluție 1080p',
+        'Livrare în 7 Zile',
+        'Suport Email'
       ],
       color: '#8b5cf6'
     },
     {
       name: 'Enterprise',
-      price: '$2499',
+      price: '9999 LEI',
       popular: false,
       features: [
-        'Unlimited Videos',
-        'Complete Branding Package',
-        'Advanced Editing & Effects',
-        'Unlimited Revisions',
-        '4K Resolution',
-        'Priority Delivery',
-        '24/7 Support',
-        'Dedicated Account Manager'
+        'Videoclipuri Nelimitate',
+        'Pachet Complet de Branding',
+        'Editare Avansată & Efecte',
+        'Revizuiri Nelimitate',
+        'Rezoluție 4K',
+        'Livrare Prioritară',
+        'Suport 24/7',
+        'Manager de Cont Dedicat'
       ],
       color: '#ec4899'
     }
@@ -79,9 +79,9 @@ const Packages = () => {
     <section id="packages" className="packages" ref={sectionRef}>
       <div className="packages-container">
         <div className={`section-header ${isVisible ? 'visible' : ''}`}>
-          <h2 className="section-title">Choose Your Perfect Package</h2>
+          <h2 className="section-title">Alege Pachetul Perfect Pentru Tine</h2>
           <p className="section-subtitle">
-            Flexible pricing plans designed to fit your business needs
+            Planuri de prețuri flexibile create pentru nevoile afacerii tale
           </p>
         </div>
 
@@ -92,13 +92,13 @@ const Packages = () => {
               className={`package-card ${pkg.popular ? 'popular' : ''}`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              {pkg.popular && <div className="popular-badge">Most Popular</div>}
+              {pkg.popular && <div className="popular-badge">Cel Mai Popular</div>}
               
               <div className="package-header">
                 <h3 className="package-name">{pkg.name}</h3>
                 <div className="package-price">
                   <span className="price">{pkg.price}</span>
-                  <span className="period">/project</span>
+                  <span className="period">/proiect</span>
                 </div>
               </div>
 
@@ -114,7 +114,7 @@ const Packages = () => {
               </ul>
 
               <button className="package-btn" style={{ background: pkg.color }}>
-                Get Started
+                Începe Acum
                 <span className="btn-arrow">→</span>
               </button>
             </div>

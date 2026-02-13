@@ -70,9 +70,9 @@ const Team = () => {
     <section id="team" className="team" ref={sectionRef}>
       <div className="team-container">
         <div className={`section-header ${isVisible ? 'visible' : ''}`}>
-          <h2 className="section-title">Meet Our Team</h2>
+          <h2 className="section-title">Cunoaște Echipa Noastră</h2>
           <p className="section-subtitle">
-            Talented professionals dedicated to bringing your vision to life
+            Profesioniști talentați și dedicați care vor să-ți aducă ideile la viață
           </p>
         </div>
 

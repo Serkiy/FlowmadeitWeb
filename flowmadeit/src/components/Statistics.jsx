@@ -76,25 +76,25 @@ const Statistics = () => {
 
   const stats = [
     {
-      label: 'Projects Completed',
+      label: 'Proiecte Finalizate',
       value: counts.projects,
       suffix: '+',
       icon: '🎬'
     },
     {
-      label: 'Happy Clients',
+      label: 'Clienți Mulțumiți',
       value: counts.clients,
       suffix: '+',
       icon: '👥'
     },
     {
-      label: 'Total Views',
+      label: 'Vizualizări Totale',
       value: formatNumber(counts.views),
       suffix: '+',
       icon: '👁️'
     },
     {
-      label: 'Awards Won',
+      label: 'Premii Câștigate',
       value: counts.awards,
       suffix: '+',
       icon: '🏆'
@@ -114,9 +114,9 @@ const Statistics = () => {
     <section id="stats" className="statistics" ref={sectionRef}>
       <div className="statistics-container">
         <div className={`section-header ${isVisible ? 'visible' : ''}`}>
-          <h2 className="section-title">Our Impact in Numbers</h2>
+          <h2 className="section-title">Impactul Nostru În Cifre</h2>
           <p className="section-subtitle">
-            Real results that drive your business forward
+            Rezultate reale care îți vor propulsa afacerea 
           </p>
         </div>
 
@@ -137,7 +137,7 @@ const Statistics = () => {
         </div>
 
         <div className={`chart-section ${isVisible ? 'visible' : ''}`}>
-          <h3 className="chart-title">Client Satisfaction Rate</h3>
+          <h3 className="chart-title">Grad de Satisfacție Clienți</h3>
           <div className="chart-container">
             <div className="chart">
               {chartData.map((item, index) => (
