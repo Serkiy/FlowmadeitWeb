@@ -128,26 +128,6 @@ const Statistics = () => {
             </div>
           ))}
         </div>
-
-        
-
-        <div className={`features-grid ${isVisible ? 'visible' : ''}`}>
-          <div className="feature-box">
-            <div className="feature-icon">⚡</div>
-            <h4>Fast Delivery</h4>
-            <p>Quick turnaround times without compromising quality</p>
-          </div>
-          <div className="feature-box">
-            <div className="feature-icon">💎</div>
-            <h4>Premium Quality</h4>
-            <p>Industry-leading standards in every project</p>
-          </div>
-          <div className="feature-box">
-            <div className="feature-icon">🎯</div>
-            <h4>Results Driven</h4>
-            <p>Focused on achieving your business goals</p>
-          </div>
-        </div>
       </div>
     </section>
   )
