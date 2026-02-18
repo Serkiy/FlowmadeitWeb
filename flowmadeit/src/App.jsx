@@ -7,6 +7,7 @@ import Portfolio from './components/Portfolio'
 import Team from './components/Team'
 import Statistics from './components/Statistics'
 import Footer from './components/Footer'
+import ContactCTA from './components/ContactCTA'
 
 function App() {
   const [scrolled, setScrolled] = useState(false)
@@ -41,6 +42,7 @@ function App() {
       <Team />
       <Statistics />
       <Footer />
+      <ContactCTA />
     </div>
   )
 }
