@@ -3,6 +3,14 @@ import './Portfolio.css'
 import haisalucramVideo from '../assets/haisalucram.mp4'
 import selllVideo from '../assets/selll.mp4'
 import ytVideo from '../assets/yt.mp4'
+import dv1 from '../assets/DV1.jpg'
+import dv2 from '../assets/DV2.jpg'
+import dv3 from '../assets/DV3.jpg'
+import dv4 from '../assets/DV4.jpg'
+import ss1 from '../assets/SS1.jpg'
+import ss2 from '../assets/SS2.jpg'
+import ss3 from '../assets/SS3.jpg'
+import ss4 from '../assets/SS4.jpg'
 
 const Portfolio = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -52,7 +60,62 @@ const Portfolio = () => {
       media: ytVideo,
       type: 'video'
     },
-
+    {
+      title: 'Digital Video 1',
+      category: 'video',
+      description: 'Conținut video profesional',
+      media: dv1,
+      type: 'image'
+    },
+    {
+      title: 'Digital Video 2',
+      category: 'video',
+      description: 'Producție video creativă',
+      media: dv2,
+      type: 'image'
+    },
+    {
+      title: 'Digital Video 3',
+      category: 'video',
+      description: 'Storytelling vizual',
+      media: dv3,
+      type: 'image'
+    },
+    {
+      title: 'Digital Video 4',
+      category: 'video',
+      description: 'Content marketing video',
+      media: dv4,
+      type: 'image'
+    },
+    {
+      title: 'Social Strategy 1',
+      category: 'video',
+      description: 'Strategii social media',
+      media: ss1,
+      type: 'image'
+    },
+    {
+      title: 'Social Strategy 2',
+      category: 'video',
+      description: 'Engagement și creștere',
+      media: ss2,
+      type: 'image'
+    },
+    {
+      title: 'Social Strategy 3',
+      category: 'video',
+      description: 'Campanii virale',
+      media: ss3,
+      type: 'image'
+    },
+    {
+      title: 'Social Strategy 4',
+      category: 'video',
+      description: 'Brand awareness',
+      media: ss4,
+      type: 'image'
+    }
   ]
 
   const filters = ['toate', 'video', 'webdev']
