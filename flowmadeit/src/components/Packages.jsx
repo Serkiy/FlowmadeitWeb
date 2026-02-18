@@ -29,7 +29,7 @@ const Packages = () => {
   const packages = [
     {
       name: 'Starter',
-      price: '1250 LEI',
+      price: '1250 LEI+',
       popular: false,
       features: [
         '6-8 videoclipuri scurte',
