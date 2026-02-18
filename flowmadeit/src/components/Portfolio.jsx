@@ -3,14 +3,19 @@ import './Portfolio.css'
 import haisalucramVideo from '../assets/haisalucram.mp4'
 import selllVideo from '../assets/selll.mp4'
 import ytVideo from '../assets/yt.mp4'
-import dv1 from '../assets/DV1.jpg'
-import dv2 from '../assets/DV2.jpg'
-import dv3 from '../assets/DV3.jpg'
-import dv4 from '../assets/DV4.jpg'
-import ss1 from '../assets/SS1.jpg'
-import ss2 from '../assets/SS2.jpg'
-import ss3 from '../assets/SS3.jpg'
-import ss4 from '../assets/SS4.jpg'
+import dv1 from '../assets/DV1.png'
+import dv2 from '../assets/DV2.png'
+import dv3 from '../assets/DV3.png'
+import dv4 from '../assets/DV4.png'
+import ss1 from '../assets/SS1.jpeg'
+import ss2 from '../assets/SS2.jpeg'
+import ss3 from '../assets/SS3.jpeg'
+import ss4 from '../assets/SS4.jpeg'
+import s1 from '../assets/S1.mov'
+import s2 from '../assets/S2.mov'
+import s3 from '../assets/S3.mov'
+import s4 from '../assets/S4.mov'
+import s5 from '../assets/S5.mov'
 
 const Portfolio = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -115,6 +120,41 @@ const Portfolio = () => {
       description: 'Brand awareness',
       media: ss4,
       type: 'image'
+    },
+    {
+      title: 'Web Project 1',
+      category: 'webdev',
+      description: 'Website design & development',
+      media: s1,
+      type: 'video'
+    },
+    {
+      title: 'Web Project 2',
+      category: 'webdev',
+      description: 'Landing page optimization',
+      media: s2,
+      type: 'video'
+    },
+    {
+      title: 'Web Project 3',
+      category: 'webdev',
+      description: 'E-commerce solution',
+      media: s3,
+      type: 'video'
+    },
+    {
+      title: 'Web Project 4',
+      category: 'webdev',
+      description: 'Web application development',
+      media: s4,
+      type: 'video'
+    },
+    {
+      title: 'Web Project 5',
+      category: 'webdev',
+      description: 'Full-stack web platform',
+      media: s5,
+      type: 'video'
     }
   ]
 
