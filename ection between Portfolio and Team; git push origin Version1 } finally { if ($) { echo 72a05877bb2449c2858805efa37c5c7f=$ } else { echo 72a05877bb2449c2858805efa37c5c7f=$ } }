@@ -1,0 +1,10 @@
+[33med25395[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mVersion1[m[33m, [m[1;31morigin/Version1[m[33m)[m Remove WelcomeOverlay component completely
+[33mb6ea9c4[m Scale PNG image 40% larger (400px to 560px)
+[33m30e8865[m Move thought bubble significantly to the left
+[33m918bb96[m Move thought bubble further to the right
+[33m8c42a13[m Adjust thought bubble position - move left and up
+[33m9c91ccc[m Update welcome overlay with larger image and thought bubble design
+[33m5d4d221[m Add WelcomeOverlay CSS and welcome image
+[33m14a5b91[m Add welcome overlay popup with person greeting
+[33m1f9e81e[m[33m ([m[1;31morigin/portofolio[m[33m)[m Changed statistics and removed clutter
+[33m4ddffa1[m minor fixes and translation

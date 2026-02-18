@@ -49,7 +49,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .packages-grid.visible .package-card {
@@ -76,7 +76,7 @@
 }
 
 .package-card.popular {
-  transform: scale(1.08);
+  transform: scale(1.05);
   background: rgba(99, 102, 241, 0.1);
   border: 2px solid var(--primary-color);
   box-shadow: 0 20px 60px rgba(99, 102, 241, 0.4);
@@ -84,7 +84,7 @@
 }
 
 .package-card.popular:hover {
-  transform: scale(1.08) translateY(-10px);
+  transform: scale(1.05) translateY(-10px);
 }
 
 .popular-badge {

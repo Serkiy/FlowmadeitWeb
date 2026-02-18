@@ -28,48 +28,96 @@ const Packages = () => {
 
   const packages = [
     {
-      name: 'Profesional',
-      price: '3999 LEI',
+      name: 'Starter',
+      price: '1250 LEI',
       popular: false,
       features: [
-        '3 Videoclipuri Profesionale',
-        'Grafică Social Media',
-        'Editare Video de Bază',
-        '2 Revizuiri',
-        'Rezoluție 1080p',
-        'Livrare în 10 Zile',
-        'Suport Email'
-      ],
-      color: '#6366f1'
-    },
-    {
-      name: 'Starter',
-      price: '1999 LEI',
-      popular: true,
-      features: [
-        '1 Videoclip Profesional',
-        '5 Postări Social Media',
-        'Editare de Bază',
-        '1 Revizuire',
-        'Rezoluție 1080p',
-        'Livrare în 7 Zile',
+        '6-8 videoclipuri scurte',
+        'Editare de baza material 4K',
+        'postare pe 1-2 platforme',
+        'O revizie',
+        'FĂRĂ growth agresiv',
+        'FĂRĂ figurant garantat ( plata acestuia pe zi de filamre )',
         'Suport Email'
       ],
       color: '#8b5cf6'
     },
     {
-      name: 'Enterprise',
-      price: '9999 LEI',
+      name: 'Growth',
+      price: '2250 LEI',
+      popular: true,
+      features: [
+        '12–15 video / lună (short-form)',
+        'Filmare + editare profesională material 4K',
+        'Postare și managemnet account pe TikTok + Instagram + Facebook',
+        'Content strategy lunar (simplu)',
+        'Management pagini',
+        'Growth organic (engagement, follow, community)',
+        'Figurant (7 zile/lună, dacă e nevoie)',
+        'Raport lunar simplu'
+      ],
+      color: '#6366f1'
+    },
+    {
+      name: 'Authority',
+      price: '3999 LEI',
       popular: false,
       features: [
-        'Videoclipuri Nelimitate',
-        'Pachet Complet de Branding',
-        'Editare Avansată & Efecte',
-        'Revizuiri Nelimitate',
-        'Rezoluție 4K',
-        'Livrare Prioritară',
-        'Suport 24/7',
-        'Manager de Cont Dedicat'
+          'Tot ceea ce este inclus in pachetul Growth la care se adauga urmatoarele:',
+        '20–25 video / lună',
+        'Conținut cinematic / storytelling',
+        'Figurant dedicat (7 zile)',
+        'Shooting foto lunar',
+        'Mini branding',
+        'Landing page / website simplu (1x la 3–6 luni)',
+        'Prioritate fata de alti clienti',
+        'Strategie clară de poziționare'
+      ],
+      color: '#ec4899'
+    },
+    {
+      name: 'Web Start',
+      price: '999 LEI',
+      popular: false,
+      features: [
+        'Un landing page, curat și profesionist, pentru afaceri care vor să fie găsite online.',
+        'Design simplu, modern',
+        'Mobile friendly',
+        'Secțiuni esențiale (Despre, Servicii, Contact)',
+        'Formular de contact / WhatsApp',
+        'Integrare social media'
+      ],
+      color: '#8b5cf6'
+    },
+    {
+      name: 'Web Business',
+      price: '1450 LEI',
+      popular: true,
+      features: [
+        'Un website care îți oferă credibilitate și susține conținutul video.',
+        'Website complet (4–5 pagini)',
+        'Design personalizat',
+        'Structură clară pentru conversii',
+        'Pagini servicii',
+        'Integrare Google Maps',
+        'Formular avansat',
+        'Optimizare basic SEO'
+      ],
+      color: '#6366f1'
+    },
+    {
+      name: 'Web Pro',
+      price: '2750 LEI',
+      popular: false,
+      features: [
+        'Pentru afaceri care vor mai mult decât „un site frumos”.',
+        'Website 6–8 pagini',
+        'Design premium & UX mai bun',
+        'Landing page inclus',
+        'Integrare video (hero video / reels)',
+        'Structură orientată spre conversii',    
+        'SEO on-page extins',
+        'Performanță & viteză optimizate'
       ],
       color: '#ec4899'
     }
@@ -98,7 +146,7 @@ const Packages = () => {
                 <h3 className="package-name">{pkg.name}</h3>
                 <div className="package-price">
                   <span className="price">{pkg.price}</span>
-                  <span className="period">/proiect</span>
+                  <span className="period">/lună</span>
                 </div>
               </div>
 

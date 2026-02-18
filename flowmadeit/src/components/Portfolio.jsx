@@ -55,7 +55,7 @@ const Portfolio = () => {
 
   ]
 
-  const filters = ['toate', 'video', 'social']
+  const filters = ['toate', 'video', 'webdev']
 
   const filteredProjects = activeFilter === 'toate'
     ? projects 
@@ -78,7 +78,7 @@ const Portfolio = () => {
               className={`filter-btn ${activeFilter === filter ? 'active' : ''}`}
               onClick={() => setActiveFilter(filter)}
             >
-              {filter === 'toate' ? 'Toate' : filter === 'video' ? 'Video' : 'Social Media'}
+              {filter === 'toate' ? 'Toate' : filter === 'video' ? 'Video' : 'Web Development'}
             </button>
           ))}
         </div>
