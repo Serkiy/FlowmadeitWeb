@@ -8,6 +8,7 @@ import Team from './components/Team'
 import Statistics from './components/Statistics'
 import Footer from './components/Footer'
 import ContactCTA from './components/ContactCTA'
+import { Analytics } from '@vercel/analytics/react'
 
 function App() {
   const [scrolled, setScrolled] = useState(false)
@@ -43,6 +44,7 @@ function App() {
       <Statistics />
       <Footer />
       <ContactCTA />
+      <Analytics />
     </div>
   )
 }
